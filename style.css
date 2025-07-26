@@ -1,82 +1,52 @@
 body {
-    margin: 0;
-    font-family: "Courier New", Courier, monospace;
-    color: #eee;
+  margin: 0;
+  min-height: 100vh;
+  background: url('CAMINHO_PARA_SUA_IMAGEM_DE_NUVEM_AQUI.png') repeat-x center top, #7ed3fa;
+  /* Troque o caminho acima para o de sua imagem de nuvem */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-header {
-    background-color: #222;
-    padding: 10px 0;
+.menu-topo {
+  background: #444;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 0;
+  font-size: 15px;
 }
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center; /* Center the navigation items */
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+.menu-topo a {
+  color: #ffd800;
+  text-decoration: none;
+  margin: 0 14px;
+  transition: color 0.2s;
 }
-
-nav ul li {
-    margin: 0 10px;
+.menu-topo a:hover {
+  color: #fff;
 }
-
-nav ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 8px;
-    border-radius: 3px;
-    transition: background-color 0.3s ease;
-    display: flex; /* Use flexbox for text and triangle */
-    align-items: center; /* Vertically align text and triangle */
+.container-titulo {
+  background: rgba(255,255,255,0.97);
+  margin: 36px auto 0 auto;
+  max-width: 900px;
+  border: 6px solid #bbb;
+  box-shadow: 0 8px 40px #2224;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+.placeholder-titulo {
+  width: 650px;
+  height: 205px;
+  background: #e2e2e2;
+  border: 3px dashed #aabb44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  color: #7c9c1f;
+  margin-top: 16px;
 }
-
-/* Color definitions for each menu item, with a small triangle icon */
-nav ul li a.help { color: #FFD700; } /* Gold */
-nav ul li a.help::before { content: '▶'; margin-right: 5px; color: #FFD700; font-size: 0.8em; }
-
-nav ul li a.map { color: #8B008B; } /* Dark Magenta */
-nav ul li a.map::before { content: '▶'; margin-right: 5px; color: #8B008B; font-size: 0.8em; }
-
-nav ul li a.log { color: #00BFFF; } /* Deep Sky Blue */
-nav ul li a.log::before { content: '▶'; margin-right: 5px; color: #00BFFF; font-size: 0.8em; }
-
-nav ul li a.search { color: #FF4500; } /* Orange Red */
-nav ul li a.search::before { content: '▶'; margin-right: 5px; color: #FF4500; font-size: 0.8em; }
-
-nav ul li a.news { color: #32CD32; } /* Lime Green */
-nav ul li a.news::before { content: '▶'; margin-right: 5px; color: #32CD32; font-size: 0.8em; }
-
-nav ul li a.music { color: #EE82EE; } /* Violet */
-nav ul li a.music::before { content: '▶'; margin-right: 5px; color: #EE82EE; font-size: 0.8em; }
-
-nav ul li a.more { color: #FFA07A; } /* Light Salmon */
-nav ul li a.more::before { content: '▶'; margin-right: 5px; color: #FFA07A; font-size: 0.8em; }
-
-nav ul li a.settings { color: #ADD8E6; } /* Light Blue */
-nav ul li a.settings::before { content: '▶'; margin-right: 5px; color: #ADD8E6; font-size: 0.8em; }
-
-nav ul li a.credits { color: #DDA0DD; } /* Plum */
-nav ul li a.credits::before { content: '▶'; margin-right: 5px; color: #DDA0DD; font-size: 0.8em; }
-
-.title-placeholder {
-    margin-top: 50px;
-    text-align: center;
-}
-
-/* Basic responsiveness */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
+@media (max-width: 750px) {
+  .placeholder-titulo { width: 90vw; font-size: 7vw; height: 22vw; }
+  .container-titulo { padding: 4vw; }
 }
