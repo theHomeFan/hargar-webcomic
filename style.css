@@ -1,1 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Dark gray background */
+    color: #eee;
+}
 
+header {
+    background-color: #222; /* Slightly darker header background */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    display: flex; /* Use flexbox for text and triangle */
+    align-items: center; /* Vertically align text and triangle */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Color definitions for each menu item, with a small triangle icon */
+nav ul li a.help { color: #FFD700; } /* Gold */
+nav ul li a.help::before { content: '▶'; margin-right: 5px; color: #FFD700; font-size: 0.8em; }
+
+nav ul li a.map { color: #8B008B; } /* Dark Magenta */
+nav ul li a.map::before { content: '▶'; margin-right: 5px; color: #8B008B; font-size: 0.8em; }
+
+nav ul li a.log { color: #00BFFF; } /* Deep Sky Blue */
+nav ul li a.log::before { content: '▶'; margin-right: 5px; color: #00BFFF; font-size: 0.8em; }
+
+nav ul li a.search { color: #FF4500; } /* Orange Red */
+nav ul li a.search::before { content: '▶'; margin-right: 5px; color: #FF4500; font-size: 0.8em; }
+
+nav ul li a.news { color: #32CD32; } /* Lime Green */
+nav ul li a.news::before { content: '▶'; margin-right: 5px; color: #32CD32; font-size: 0.8em; }
+
+nav ul li a.music { color: #EE82EE; } /* Violet */
+nav ul li a.music::before { content: '▶'; margin-right: 5px; color: #EE82EE; font-size: 0.8em; }
+
+nav ul li a.more { color: #FFA07A; } /* Light Salmon */
+nav ul li a.more::before { content: '▶'; margin-right: 5px; color: #FFA07A; font-size: 0.8em; }
+
+nav ul li a.settings { color: #ADD8E6; } /* Light Blue */
+nav ul li a.settings::before { content: '▶'; margin-right: 5px; color: #ADD8E6; font-size: 0.8em; }
+
+nav ul li a.credits { color: #DDA0DD; } /* Plum */
+nav ul li a.credits::before { content: '▶'; margin-right: 5px; color: #DDA0DD; font-size: 0.8em; }
+
+.title-placeholder {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Basic responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
