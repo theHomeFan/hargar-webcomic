@@ -1,9 +1,10 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: url('CAMINHO_PARA_SUA_IMAGEM_DE_NUVEM_AQUI.png') repeat-x center top, #7ed3fa;
+  background: url('background.jpg') repeat-x center top, #7ed3fa;
   font-family: "Courier New", Courier, monospace;
 }
+
 .menu-topo {
   background: #444;
   color: #fff;
@@ -12,6 +13,7 @@ body {
   align-items: center;
   padding: 4px 0;
   font-size: 14px;
+  flex-wrap: wrap; /* Adiciona quebra em telas pequenas */
 }
 
 .help {
@@ -24,9 +26,11 @@ body {
   margin: 0 14px;
   transition: color 0.2s;
 }
+
 .menu-topo a:hover {
-  color: #fff;
+  color: #ccc;
 }
+
 .container-titulo {
   background: rgba(255,255,255,0.97);
   margin: 36px auto 0 auto;
@@ -39,7 +43,15 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 @media (max-width: 750px) {
-  .placeholder-titulo { width: 90vw; font-size: 7vw; height: 22vw; }
-  .container-titulo { padding: 4vw; }
+  .placeholder-titulo {
+    width: 90vw;
+    font-size: 7vw;
+    height: 22vw;
+  }
+  .container-titulo {
+    padding: 4vw;
+  }
 }
+
