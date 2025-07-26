@@ -2,7 +2,6 @@ body {
   margin: 0;
   min-height: 100vh;
   background: url('CAMINHO_PARA_SUA_IMAGEM_DE_NUVEM_AQUI.png') repeat-x center top, #7ed3fa;
-  /* Troque o caminho acima para o de sua imagem de nuvem */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .menu-topo {
