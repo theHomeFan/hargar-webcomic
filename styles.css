@@ -13,6 +13,11 @@ body {
   padding: 4px 0;
   font-size: 12px;
 }
+
+.help {
+  color: #FFFF00;
+}
+
 .menu-topo a {
   color: #ffd800;
   text-decoration: none;
