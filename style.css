@@ -11,11 +11,11 @@ body {
   justify-content: center;
   align-items: center;
   padding: 4px 0;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .help {
-  color: #FFFF00;
+  color: red;
 }
 
 .menu-topo a {
