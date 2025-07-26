@@ -1,65 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hargar.exe - Uma Webcomic</title>
-  <style>
-    body {
-      background-color: #ffffff;
-      color: #000000;
-      font-family: "Courier New", Courier, monospace;
-      text-align: center;
-      margin: 0;
-      padding: 50px;
-    }
-
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.2em;
-    }
-
-    p {
-      font-size: 1.2em;
-      max-width: 600px;
-      margin: auto;
-    }
-
-    .start-button {
-      display: inline-block;
-      margin-top: 40px;
-      padding: 15px 30px;
-      font-size: 1.1em;
-      border: 2px solid black;
-      background-color: white;
-      color: black;
-      text-decoration: none;
-      transition: background-color 0.3s;
-    }
-
-    .start-button:hover {
-      background-color: #f0f0f0;
-      cursor: pointer;
-    }
-
-    .footer {
-      margin-top: 60px;
-      font-size: 0.8em;
-      color: #666;
-    }
-  </style>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Coleção - Inspirado em Homestuck</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
 <body>
+    <header class="top-bar">
+        <div class="browser-controls">
+            <span>&lt; C &gt; /</span>
+        </div>
+        <div class="tabs">
+            <div class="tab active">
+                <span>Rose: Recaptchalogue you.</span>
+            </div>
+            <div class="tab">
+                <span>The Unofficial Homestuck</span>
+                <span class="close-tab">+</span>
+            </div>
+            <div class="add-tab">+</div>
+        </div>
+    </header>
 
-  <h1>HARGAR.EXE</h1>
-  <p>Uma história interativa onde a realidade é um código-fonte bagunçado demais.</p>
+    <main class="container">
+        <div class="background-pattern"></div> <div class="content-wrapper">
+            <div class="header-image">
+                <img src="COLLECTION.png" alt="COLLECTION Header"> </div>
 
-  <a class="start-button" href="comic/001.html">INICIAR A WEBCOMIC</a>
+            <section class="main-section">
+                <div class="main-character-box">
+                    <img src="john-egbert.png" alt="John Egbert"> <p class="date">Apr 2009 - Apr 2016</p>
+                    <p class="pages">8,130 pages</p>
+                </div>
+                <div class="main-text-content">
+                    <p>A story about some kids who are friends over the internet. They decide to play a game together. There are major consequences.</p>
+                    <p>The fourth, final, and most famous of the MS Paint Adventures. While it began as a "mock-game" following reader commands like the previous adventures, they were phased out as the story unfolded into a mixed-media barrage of mid-2000's internet culture satire, interpersonal drama, and Weird Plot Shit [sic].</p>
+                    <p>One-upping Problem Sleuth's action-packed GIFs, Homestuck spiced up pivotal moments with Flash animations scored by a lively team of composers. Over time, the music team produced dozens of albums across a variety of genres.</p>
+                    <div class="links">
+                        <a href="#">&gt; Begin Homestuck</a>
+                        <a href="#">&gt; Adventure Log</a>
+                        <a href="#">&gt; Adventure Map</a>
+                        <a href="#">&gt; Credits</a>
+                    </div>
+                </div>
+            </section>
 
-  <div class="footer">
-    <p>Inspirado por MSPaint Adventures.</p>
-    <p>&copy; 2025 - Cordeiro Studios</p>
-  </div>
+            <section class="info-boxes">
+                <div class="info-box">
+                    <img src="homestuck-beta.png" alt="Homestuck BETA icon"> <h3>Homestuck BETA</h3>
+                    <p class="date">Mar 2009 - Mar 2009</p>
+                    <p>Homestuck was initially intended to be made exclusively in Flash. It lasted about three days.</p>
+                </div>
 
+                <div class="info-box">
+                    <img src="music-icon.png" alt="Music icon"> <h3>Music</h3>
+                    <p class="date">Mar 2009 - May 2020</p>
+                    <p>Explore the entire discography of official Homestuck music.</p>
+                </div>
+
+                <div class="info-box">
+                    <img src="sweet-bro.png" alt="Sweet Bro & Hella Jeff icon"> <h3>Sweet Bro & Hella Jeff</h3>
+                    <p class="date">Mar 2009 - Nov 2017</p>
+                    <p>It keeps happening</p>
+                    <a href="#">&gt; The Origin Story.</a>
+                </div>
+
+                <div class="info-box locked">
+                    <img src="question-mark.png" alt="Question mark icon"> <h3>??????</h3>
+                    <p class="date">Dec 2009 - Jul 2014</p>
+                    <p>Reach page 1153 of Homestuck to unlock!</p>
+                </div>
+
+                <div class="info-box locked">
+                    <img src="question-mark.png" alt="Question mark icon"> <h3>??????</h3>
+                    <p class="date">Jul 2011 - Apr 2016</p>
+                    <p>Reach page 2532 of Homestuck to unlock!</p>
+                </div>
+
+                <div class="info-box locked">
+                    <img src="question-mark.png" alt="Question mark icon"> <h3>??????</h3>
+                    <p class="date">Dec 2013 - Jul 2014</p>
+                    <p>Reach page 6235 of Homestuck to unlock!</p>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
