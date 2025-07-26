@@ -37,18 +37,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.placeholder-titulo {
-  width: 650px;
-  height: 205px;
-  background: #e2e2e2;
-  border: 3px dashed #aabb44;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 36px;
-  color: #7c9c1f;
-  margin-top: 16px;
 }
 @media (max-width: 750px) {
   .placeholder-titulo { width: 90vw; font-size: 7vw; height: 22vw; }
