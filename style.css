@@ -14,8 +14,8 @@ body {
   padding: 4px 0;
   font-size: 14px;
   flex-wrap: wrap;
-  position: relative; /* Para garantir que o z-index funcione */
-  z-index: 10; /* Para o menu ficar por cima */
+  position: relative;
+  z-index: 10; 
 }
 
 .help {
@@ -54,72 +54,71 @@ body {
   object-fit: contain;
 }
 
-/* --- Nova Seção: Conteúdo Principal --- */
+
 .container-conteudo-principal {
-  background: rgba(255,255,255,0.97); /* Fundo branco semi-transparente */
-  margin: 20px auto 40px auto; /* Margem ajustada */
+  background: rgba(255,255,255,0.97);
+  margin: 20px auto 40px auto;
   max-width: 900px;
-  border: 6px solid #bbb; /* Borda similar ao título */
+  border: 6px solid #bbb;
   box-shadow: 0 8px 40px #2224;
   padding: 32px;
   position: relative;
   z-index: 5;
-  line-height: 1.6; /* Espaçamento de linha para melhor leitura */
+  line-height: 1.6;
 }
 
 .homestuck-intro {
   display: flex;
-  flex-wrap: wrap; /* Permite que os elementos quebrem a linha */
+  flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 30px; /* Reduzido para aproximar da próxima seção */
+  margin-bottom: 30px;
 }
 
 .intro-left {
-  flex: 0 0 180px; /* Largura fixa para telas maiores */
+  flex: 0 0 180px;
   text-align: center;
 }
 
 .placeholder-imagem-personagem {
-  width: 160px; /* Largura fixa do placeholder em telas maiores */
-  height: 160px; /* Altura fixa do placeholder em telas maiores */
+  width: 160px;
+  height: 160px;
   background-color: #ccc;
   border: 2px dashed #999;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto 10px auto; /* Centraliza e adiciona margem inferior */
+  margin: 0 auto 10px auto;
   font-size: 0.9em;
   color: #666;
   text-align: center;
 }
 
-/* Regra para as imagens reais dentro do placeholder do personagem */
 .placeholder-imagem-personagem img {
-  max-width: 100%; /* A imagem não será maior que a largura do pai */
-  max-height: 100%; /* A imagem não será maior que a altura do pai */
-  height: auto; /* Mantém a proporção da imagem */
-  display: block; /* Remove espaços extras e ajuda no alinhamento */
-  object-fit: contain; /* Faz a imagem se adaptar inteira ao contêiner, sem cortar */
-  margin: 0 auto; /* Centraliza a imagem se ela for menor que o placeholder */
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  margin: 0 auto;
 }
 
 .legenda-imagem {
   font-size: 0.85em;
   color: #555;
-  margin-bottom: 0; /* Ajusta a margem inferior da legenda */
+  margin-bottom: 0;
 }
 
 .intro-right {
-  flex: 1; /* Ocupa o restante do espaço */
-  min-width: 300px; /* Largura mínima para o texto */
+  flex: 1;
+  min-width: 300px;
 }
 
-.intro-right p:first-of-type { /* Alvo apenas o primeiro parágrafo */
-  margin-top: 0; /* Garante que o primeiro parágrafo não tenha margem superior excessiva */
+.intro-right p:first-of-type {
+  margin-top: 0;
 }
 
 .intro-right p {
-  margin-bottom: 1em; /* Espaçamento entre parágrafos */
+  margin-bottom: 1em;
 }
 
 .links-navegacao {
@@ -146,16 +145,16 @@ body {
 .secoes-adicionais {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px; /* Reduzido para aproximar as colunas */
-  margin-top: 30px; /* Reduzido para aproximar da seção acima */
+  gap: 20px;
+  margin-top: 30px;
   border-top: 1px dashed #ccc;
-  padding-top: 20px; /* Reduzido para aproximar do divisor */
+  padding-top: 20px;
 }
 
 .secao-item {
   display: flex;
   align-items: flex-start;
-  gap: 10px; /* Reduzido para aproximar imagem do texto */
+  gap: 10px;
 }
 
 .placeholder-imagem-secao {
@@ -169,21 +168,21 @@ body {
   font-size: 0.8em;
   color: #777;
   flex-shrink: 0;
-  margin-bottom: 0; /* ADICIONADO/ZERADO: Remove margem inferior para aproximar do h3 */
+  margin-bottom: 0;
 }
 
-/* Regra para as imagens reais dentro do placeholder da seção */
+
 .placeholder-imagem-secao img {
   max-width: 100%;
   max-height: 100%;
   height: auto;
   display: block;
-  object-fit: contain; /* Faz a imagem se adaptar inteira ao contêiner */
+  object-fit: contain;
   margin: 0 auto;
 }
 
 .secao-item h3 {
-  margin-top: 0; /* GARANTIDO: Garante que não haja margem superior excessiva */
+  margin-top: 0;
   margin-bottom: 5px;
   color: #444;
 }
@@ -191,10 +190,10 @@ body {
 .secao-item p {
   font-size: 0.95em;
   color: #555;
-  margin-bottom: 0; /* Garante que não haja margem inferior extra nos parágrafos finais */
+  margin-bottom: 0;
 }
 
-/* --- Media Queries para Responsividade --- */
+
 @media (max-width: 768px) {
   .container-titulo,
   .container-conteudo-principal {
@@ -205,14 +204,14 @@ body {
   .homestuck-intro {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 25px; /* Ajuste para mobile */
+    margin-bottom: 25px;
   }
 
   .intro-left {
     flex: none;
     width: 100%;
     text-align: center;
-    margin-bottom: 5px; /* Espaçamento entre imagem e texto no mobile */
+    margin-bottom: 5px;
   }
 
   .placeholder-imagem-personagem {
@@ -226,25 +225,25 @@ body {
   }
 
   .intro-right p:first-of-type {
-    margin-top: 0; /* Garante que o primeiro parágrafo não tenha margem superior no mobile */
+    margin-top: 0;
   }
 
   .links-navegacao {
     justify-content: center;
-    gap: 10px 20px; /* Ajuste para mobile */
+    gap: 10px 20px;
   }
 
   .secoes-adicionais {
     grid-template-columns: 1fr;
-    gap: 25px; /* Ajuste para mobile */
-    margin-top: 25px; /* Ajuste para mobile */
+    gap: 25px;
+    margin-top: 25px;
     padding-top: 20px;
   }
 
   .secao-item {
     flex-direction: column;
     align-items: center;
-    text-align: center; /* Centraliza o texto das seções adicionais no mobile */
+    text-align: center;
   }
   }
 
