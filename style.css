@@ -255,19 +255,5 @@ body {
     align-items: center;
     text-align: center;
   }
-  }
-
-@media (max-width: 480px) {
-  .menu-topo a {
-    margin: 0 8px;
-  }
-
-  .container-conteudo-principal {
-    padding: 15px;
-  }
-
-  .placeholder-imagem-personagem {
-    width: 100px;
-    height: 100px;
-  }
+  
 }

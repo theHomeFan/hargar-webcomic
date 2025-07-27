@@ -64,6 +64,10 @@ body {
     font-size: 0.9em;
 }
 
+.noticias-placeholder img {
+  max-width: 100%; 
+}
+
 .data {
     margin-bottom: 30px;
 }
@@ -97,29 +101,3 @@ body {
     font-style: italic;
 }
 
-
-@media (max-width: 600px) {
-    .container-noticias {
-        padding: 20px;
-        margin: 15px auto;
-    }
-    .noticias-placeholder {
-        padding: 15px;
-        margin-bottom: 20px;
-    }
-    .data .ano {
-        font-size: 1.3em;
-    }
-    .data .dia {
-        font-size: 1.1em;
-    }
-    .conteudo-principal {
-        font-size: 0.95em;
-    }
-    .conteudo-principal p {
-        margin-bottom: 0.6em;
-    }
-    .conteudo-principal .comentario {
-        margin-left: 10px;
-    }
-}
