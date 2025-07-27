@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: url('background.jpg') repeat-x center top, #7ed3fa;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+.menu-topo {
+  background: #444;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 0;
+  font-size: 14px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 10; 
+}
+
+.menu-topo a {
+  color: #ffd800;
+  margin: 14px;
+  text-decoration: none;
+}
+
+.menu-topo .help {
+  color: green;
+}
+
+.menu-topo .bluey {
+  color: cyan;
+}
+
+.menu-topo .yellowy {
+  color: yellow;
+}
+
+.menu-topo .orangey {
+  color: orange;
+}
+
+.container-noticias {
+    background-color: #f8f8f8;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+.noticias-placeholder {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 6px;
+    color: #777;
+    font-size: 0.9em;
+}
+
+.data {
+    margin-bottom: 30px;
+}
+
+.data .ano {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.data .dia {
+    font-size: 1.2em;
+    color: #0000ee;
+    text-decoration: underline;
+}
+
+.conteudo-principal {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.conteudo-principal p {
+    margin-bottom: 0.8em;
+    font-size: 1em;
+}
+
+.conteudo-principal .comentario {
+    font-size: 0.9em;
+    color: #777;
+    margin-left: 20px;
+    font-style: italic;
+}
+
+
+@media (max-width: 600px) {
+    .container-noticias {
+        padding: 20px;
+        margin: 15px auto;
+    }
+    .noticias-placeholder {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    .data .ano {
+        font-size: 1.3em;
+    }
+    .data .dia {
+        font-size: 1.1em;
+    }
+    .conteudo-principal {
+        font-size: 0.95em;
+    }
+    .conteudo-principal p {
+        margin-bottom: 0.6em;
+    }
+    .conteudo-principal .comentario {
+        margin-left: 10px;
+    }
+}
