@@ -1,0 +1,13 @@
+.container-principal {
+  background: rgba(255,255,255,0.97);
+  margin: 20px auto 40px auto;
+  max-width: 900px;
+  border: 6px solid #bbb;
+  box-shadow: 0 8px 40px #2224;
+  padding: 32px;
+  position: relative;
+  z-index: 5;
+  line-height: 1.6;
+  height: auto;
+  object-fit: contain;
+}

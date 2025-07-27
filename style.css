@@ -3,6 +3,7 @@ body {
   min-height: 100vh;
   background: url('background.jpg') repeat-x center top, #7ed3fa;
   font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
 }
 
 .menu-topo {
@@ -18,19 +19,26 @@ body {
   z-index: 10; 
 }
 
-.help {
-  color: red;
-}
-
 .menu-topo a {
   color: #ffd800;
+  margin: 14px;
   text-decoration: none;
-  margin: 0 14px;
-  transition: color 0.2s;
 }
 
-.menu-topo a:hover {
-  color: #ccc;
+.menu-topo .help {
+  color: green;
+}
+
+.menu-topo .bluey {
+  color: cyan;
+}
+
+.menu-topo .yellowy {
+  color: yellow;
+}
+
+.menu-topo .orangey {
+  color: orange;
 }
 
 .container-titulo {
@@ -52,6 +60,10 @@ body {
   max-width: 100%;
   height: auto;
   object-fit: contain;
+}
+
+.story-intro {
+  font-style: italic;
 }
 
 
@@ -82,14 +94,13 @@ body {
 .placeholder-imagem-personagem {
   width: 160px;
   height: 160px;
-  background-color: #ccc;
-  border: 2px dashed #999;
+  background-color: white;
+  border: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto 10px auto;
   font-size: 0.9em;
-  color: #666;
   text-align: center;
 }
 
@@ -168,7 +179,6 @@ body {
   font-size: 0.8em;
   color: #777;
   flex-shrink: 0;
-  margin-bottom: 0;
 }
 
 
