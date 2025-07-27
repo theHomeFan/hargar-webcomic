@@ -54,56 +54,72 @@ body {
   object-fit: contain;
 }
 
+/* --- Nova Seção: Conteúdo Principal --- */
 .container-conteudo-principal {
-  background: rgba(255,255,255,0.97);
-  margin: 20px auto 40px auto;
+  background: rgba(255,255,255,0.97); /* Fundo branco semi-transparente */
+  margin: 20px auto 40px auto; /* Margem ajustada */
   max-width: 900px;
-  border: 6px solid #bbb;
+  border: 6px solid #bbb; /* Borda similar ao título */
   box-shadow: 0 8px 40px #2224;
   padding: 32px;
   position: relative;
   z-index: 5;
-  line-height: 1.6;
+  line-height: 1.6; /* Espaçamento de linha para melhor leitura */
 }
 
 .homestuck-intro {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Permite que os elementos quebrem a linha */
   gap: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 30px; /* Reduzido para aproximar da próxima seção */
 }
 
 .intro-left {
-  flex: 0 0 180px;
+  flex: 0 0 180px; /* Largura fixa para telas maiores */
   text-align: center;
 }
 
 .placeholder-imagem-personagem {
-  width: 160px;
-  height: 160px;
+  width: 160px; /* Largura fixa do placeholder em telas maiores */
+  height: 160px; /* Altura fixa do placeholder em telas maiores */
   background-color: #ccc;
   border: 2px dashed #999;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 10px auto; /* Centraliza e adiciona margem inferior */
   font-size: 0.9em;
   color: #666;
   text-align: center;
 }
 
+/* Regra para as imagens reais dentro do placeholder do personagem */
+.placeholder-imagem-personagem img {
+  max-width: 100%; /* A imagem não será maior que a largura do pai */
+  max-height: 100%; /* A imagem não será maior que a altura do pai */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove espaços extras e ajuda no alinhamento */
+  object-fit: contain; /* Faz a imagem se adaptar inteira ao contêiner, sem cortar */
+  margin: 0 auto; /* Centraliza a imagem se ela for menor que o placeholder */
+}
+
 .legenda-imagem {
   font-size: 0.85em;
   color: #555;
+  margin-bottom: 0; /* Ajusta a margem inferior da legenda */
 }
 
 .intro-right {
-  flex: 1;
-  min-width: 300px;
+  flex: 1; /* Ocupa o restante do espaço */
+  min-width: 300px; /* Largura mínima para o texto */
+}
+
+.intro-right p:first-of-type { /* Alvo apenas o primeiro parágrafo */
+  margin-top: 0; /* Garante que o primeiro parágrafo não tenha margem superior excessiva */
 }
 
 .intro-right p {
-  margin-bottom: 1em;
+  margin-bottom: 1em; /* Espaçamento entre parágrafos */
 }
 
 .links-navegacao {
@@ -130,16 +146,16 @@ body {
 .secoes-adicionais {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
+  gap: 20px; /* Reduzido para aproximar as colunas */
+  margin-top: 30px; /* Reduzido para aproximar da seção acima */
   border-top: 1px dashed #ccc;
-  padding-top: 30px;
+  padding-top: 20px; /* Reduzido para aproximar do divisor */
 }
 
 .secao-item {
   display: flex;
   align-items: flex-start;
-  gap: 15px;
+  gap: 10px; /* Reduzido para aproximar imagem do texto */
 }
 
 .placeholder-imagem-secao {
@@ -153,10 +169,21 @@ body {
   font-size: 0.8em;
   color: #777;
   flex-shrink: 0;
+  margin-bottom: 0; /* ADICIONADO/ZERADO: Remove margem inferior para aproximar do h3 */
+}
+
+/* Regra para as imagens reais dentro do placeholder da seção */
+.placeholder-imagem-secao img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain; /* Faz a imagem se adaptar inteira ao contêiner */
+  margin: 0 auto;
 }
 
 .secao-item h3 {
-  margin-top: 0;
+  margin-top: 0; /* GARANTIDO: Garante que não haja margem superior excessiva */
   margin-bottom: 5px;
   color: #444;
 }
@@ -164,8 +191,10 @@ body {
 .secao-item p {
   font-size: 0.95em;
   color: #555;
+  margin-bottom: 0; /* Garante que não haja margem inferior extra nos parágrafos finais */
 }
 
+/* --- Media Queries para Responsividade --- */
 @media (max-width: 768px) {
   .container-titulo,
   .container-conteudo-principal {
@@ -176,12 +205,14 @@ body {
   .homestuck-intro {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 25px; /* Ajuste para mobile */
   }
 
   .intro-left {
     flex: none;
     width: 100%;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 5px; /* Espaçamento entre imagem e texto no mobile */
   }
 
   .placeholder-imagem-personagem {
@@ -194,19 +225,28 @@ body {
     text-align: center;
   }
 
+  .intro-right p:first-of-type {
+    margin-top: 0; /* Garante que o primeiro parágrafo não tenha margem superior no mobile */
+  }
+
   .links-navegacao {
     justify-content: center;
+    gap: 10px 20px; /* Ajuste para mobile */
   }
 
   .secoes-adicionais {
     grid-template-columns: 1fr;
+    gap: 25px; /* Ajuste para mobile */
+    margin-top: 25px; /* Ajuste para mobile */
+    padding-top: 20px;
   }
 
   .secao-item {
     flex-direction: column;
     align-items: center;
+    text-align: center; /* Centraliza o texto das seções adicionais no mobile */
   }
-}
+  }
 
 @media (max-width: 480px) {
   .menu-topo a {
