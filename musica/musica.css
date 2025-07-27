@@ -67,13 +67,23 @@ body {
     margin: 0 auto;
 }
 
-.musica-player-placeholder {
-    background-color: #eee;
-    border: 1px dashed #ccc;
-    padding: 20px;
-    border-radius: 6px;
-    color: #777;
-    font-size: 0.9em;
+.audio-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%;
+  margin: 16px;
+}
+
+.audio-container audio {
+  max-width: 100%;
+}
+
+.audio-text {
+  color: #333;
+  font-size: 14px;
+  flex: 1 1 auto;
 }
 
 @media (max-width: 600px) {
