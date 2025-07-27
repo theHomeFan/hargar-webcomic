@@ -2,8 +2,43 @@ body {
  margin: 0;
  min-height: 100vh;
  background-color: #7ed3fa;
- font-family: Arial, Helvetica;
+ font-family: 'Courier New', Courier, monospace;
  font-weight: bold;
+}
+
+.menu-topo {
+  background: #444;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 0;
+  font-size: 14px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 10; 
+}
+
+.menu-topo a {
+  color: #ffd800;
+  margin: 14px;
+  text-decoration: none;
+}
+
+.menu-topo .help {
+  color: green;
+}
+
+.menu-topo .bluey {
+  color: cyan;
+}
+
+.menu-topo .yellowy {
+  color: yellow;
+}
+
+.menu-topo .orangey {
+  color: orange;
 }
 
 .container-principal {
@@ -40,7 +75,7 @@ body {
 }
 
 .container-principal .texto-conteudo {
-    text-align: justify;
+    text-align: center;
     color: black;
     font-size: 1em;
     margin-bottom: 0;
