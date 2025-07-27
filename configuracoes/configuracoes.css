@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: url('background.jpg') repeat-x center top, #7ed3fa;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+.menu-topo {
+  background: #444;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 0;
+  font-size: 14px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 10; 
+}
+
+.menu-topo a {
+  color: #ffd800;
+  margin: 14px;
+  text-decoration: none;
+}
+
+.menu-topo .help {
+  color: green;
+}
+
+.menu-topo .bluey {
+  color: cyan;
+}
+
+.menu-topo .yellowy {
+  color: yellow;
+}
+
+.menu-topo .orangey {
+  color: orange;
+}
+
+.container-texto h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 2.5em;
+    color: black;
+}
+
+.container-texto {
+    background: rgba(255,255,255,0.97);
+    margin: 10px auto 20px auto;
+    max-width: 900px;
+    border: 6px solid #bbb;
+    box-shadow: 0 8px 40px #2224;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center
+}
