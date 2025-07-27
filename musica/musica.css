@@ -41,8 +41,8 @@ body {
   color: orange;
 }
 
-.container-noticias {
-  background: rgba(255,255,255,0.97);
+.container-musica {
+    background: rgba(255,255,255,0.97);
   margin: 10px auto 20px auto;
   max-width: 900px;
   border: 6px solid #bbb;
@@ -56,49 +56,35 @@ body {
   text-align: center;
 }
 
+.titulo-musica-placeholder {
+    margin-bottom: 30px;
+}
 
-.noticias-placeholder {
-    background-color: white;
-    border: 2px solid black;
+.titulo-musica-placeholder img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.musica-player-placeholder {
+    background-color: #eee;
+    border: 1px dashed #ccc;
+    padding: 20px;
     border-radius: 6px;
     color: #777;
     font-size: 0.9em;
 }
 
-.noticias-placeholder img {
-  max-width: 100%; 
+@media (max-width: 600px) {
+    .container-musica {
+        padding: 20px;
+        margin: 15px auto;
+    }
+    .titulo-musica-placeholder {
+        margin-bottom: 20px;
+    }
+    .musica-player-placeholder {
+        padding: 15px;
+    }
 }
-
-.data {
-    margin-bottom: 30px;
-}
-
-.data .ano {
-    font-size: 1.5em;
-    color: #555;
-    margin-bottom: 5px;
-}
-
-.data .dia {
-    font-size: 1.2em;
-    color: #0000ee;
-    text-decoration: underline;
-}
-
-.conteudo-principal {
-    text-align: left;
-    margin-bottom: 0;
-}
-
-.conteudo-principal p {
-    margin-bottom: 0.8em;
-    font-size: 1em;
-}
-
-.conteudo-principal .comentario {
-    font-size: 0.9em;
-    color: #777;
-    margin-left: 20px;
-    font-style: italic;
-}
-
