@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: url('background.jpg') repeat-x center top, #7ed3fa;
+            font-family: "Courier New", Courier, monospace;
+            font-weight: bold;
+        }
+
+        .menu-topo {
+            background: #444;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px 0;
+            font-size: 14px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 10; 
+            width: 100%;
+        }
+
+        .menu-topo a {
+            color: #ffd800;
+            margin: 14px;
+            text-decoration: none;
+        }
+
+        .menu-topo .help {
+            color: green;
+        }
+
+        .menu-topo .bluey {
+            color: cyan;
+        }
+
+        .menu-topo .yellowy {
+            color: yellow;
+        }
+
+        .menu-topo .orangey {
+            color: orange;
+        }
+
+        .container-progresso {
+            background: rgba(255,255,255,0.97);
+            margin: 10px auto 40px auto;
+            max-width: 900px;
+            border: 6px solid #bbb;
+            box-shadow: 0 8px 40px #2224;
+            padding: 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .titulo-pagina {
+            text-align: center;
+            margin: 0 0 20px 0;
+            font-size: 2.5em;
+            color: black;
+        }
+
+        .placeholder-imagem {
+            width: 650px;
+            height: 450px;
+            background-color: #eee;
+            border: 2px dashed #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            font-size: 1.2em;
+            color: #777;
+            text-align: center;
+        }
+
+        .placeholder-imagem img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        .proxima-pagina {
+            align-self: flex-start;
+            color: #007bff;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .proxima-pagina:hover {
+            color: #0056b3; /* Azul mais escuro no hover */
+        }
+
+        @media (max-width: 768px) {
+            .container-progresso {
+                padding: 15px;
+                margin: 10px auto 20px auto;
+            }
+            .titulo-pagina {
+                font-size: 2em;
+                margin-bottom: 15px;
+            }
+            .placeholder-imagem {
+                width: 90%;
+                height: auto;
+                min-height: 300px;
+                margin-bottom: 20px;
+            }
+            .proxima-pagina {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container-progresso {
+                padding: 10px;
+                margin: 5px auto 15px auto;
+            }
+            .titulo-pagina {
+                font-size: 1.8em;
+                margin-bottom: 10px;
+            }
+            .placeholder-imagem {
+                min-height: 200px;
+                margin-bottom: 15px;
+            }
+            .proxima-pagina {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-topo">
+        <a href="/hargar-webcomic/index.html">INÍCIO</a>
+        <a href="/hargar-webcomic/ajuda/ajuda.html" class="help">AJUDA</a>
+        <a href="/hargar-webcomic/mapa/mapa.html" class="bluey">MAPA</a>
+        <a href="/hargar-webcomic/pesquisar/pesquisar.html" class="bluey">PESQUISAR</a>
+        <a href="/hargar-webcomic/noticias/noticias.html" class="yellowy">NOTÍCIAS</a>
+        <a href="/hargar-webcomic/musica/musica.html" class="yellowy">MÚSICA</a>
+        <a href="/hargar-webcomic/mais/mais.html" class="orangey">MAIS</a>
+        <a href="/hargar-webcomic/configuracoes/configuracoes.html" class="orangey">CONFIGURAÇÕES</a>
+        <a href="/hargar-webcomic/creditos/creditos.html" class="orangey">CRÉDITOS</a>
+    </div>
+
+    <div class="container-progresso">
+        <h1 class="titulo-pagina">Worldstuck</h1>
+
+        <div class="placeholder-imagem">
+            <img src="URL_DA_SUA_IMAGEM_AQUI.jpg" alt="Placeholder de Imagem (650x450px)">
+        </div>
+
+        <a href="URL_DA_PROXIMA_PAGINA.html" class="proxima-pagina">
+            > Inserir nome
+        </a>
+    </div>
+</body>
+</html>
