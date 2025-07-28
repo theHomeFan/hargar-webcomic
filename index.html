@@ -36,7 +36,11 @@
         <p>Minha primeira Webcomic interativa, contada através de um site. Eu planejo transformar esses quadrinhos em algo mais ousado mais tarde. Eu sempre estarei aqui para ouvir os comentários de vocês sobre o site!</p>
         <p>Obviamente, essa webcomic foi inspirada em Homestuck, uma incrível obra de arte. Eu consideraria essa aqui como uma espécie de spin-off, já que se passa no mesmo universo e tem <i>quase</i> as mesmas mecânicas, e não se preocupe, você não precisa saber nada de Homestuck para ler! Visite a aba de Créditos para mais detalhes sobre isso!</p>
         <div class="links-navegacao">
-          <p class="link-item"><a href="/hargar-webcomic/historia/ato 1/1.html"><h2><b>> Começar a ler</b></h2></a></p>
+          <div class="link-item" id="botao-leitura">
+  <a href="/hargar-webcomic/historia/ato 1/1.html">
+    <h2><b>> Começar a ler</b></h2>
+  </a>
+</div>
           <p class="link-item">> <a href="#">Ferramentas de Decodificação</a></p>
           <p class="link-item">> <a href="#">Mapa de Aventura</a></p>
           <p class="link-item">> <a href="#">Créditos</a></p>
@@ -61,5 +65,20 @@
       </div>
     </div>
   </div>
+
+  <script>
+  const ultimaPagina = localStorage.getItem("ultimaPagina");
+  const botaoContainer = document.getElementById("botao-leitura");
+
+  if (ultimaPagina && botaoContainer) {
+    const novoBotao = document.createElement("div");
+    novoBotao.classList.add("link-item");
+    novoBotao.innerHTML = `<a href="${ultimaPagina}"><h2><b>> Continuar a ler</b></h2></a>`;
+
+    botaoContainer.replaceWith(novoBotao);
+  }
+</script>
+
+
 </body>
 </html>

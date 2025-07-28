@@ -22,7 +22,14 @@
     <div class="container-texto">
         <h1>Configurações</h1>
 
-        <p>Nada para ver aqui, <i>por enquanto.</i></p>
+        <p style="color: red; cursor: pointer;" onclick="limparProgresso()">Clique aqui para apagar o progresso salvo</p>
     </div>
+
+    <script>
+  function limparProgresso() {
+    localStorage.clear();
+    alert("Seu progresso foi apagado!");
+  }
+</script>
 </body>
 </html>
