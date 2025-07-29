@@ -8,28 +8,28 @@
 </head>
 <body>
     <div class="menu-topo">
-    <a href="/hargar-webcomic/index.html">INÍCIO</a>
-    <a href="/hargar-webcomic/ajuda/ajuda.html" class="help">AJUDA</a>
-    <a href="/hargar-webcomic/mapa/mapa.html" class="bluey">MAPA</a>
-    <a href="/hargar-webcomic/pesquisar/pesquisar.html" class="bluey">PESQUISAR</a>
-    <a href="/hargar-webcomic/noticias/noticias.html" class="yellowy">NOTÍCIAS</a>
-    <a href="/hargar-webcomic/musica/musica.html" class="yellowy">MÚSICA</a>
-    <a href="/hargar-webcomic/mais/mais.html" class="orangey">MAIS</a>
-    <a href="/hargar-webcomic/configuracoes/configuracoes.html" class="orangey">CONFIGURAÇÕES</a>
-    <a href="/hargar-webcomic/creditos/creditos.html" class="orangey">CRÉDITOS</a>
-  </div>
+        <a href="/hargar-webcomic/index.html">INÍCIO</a>
+        <a href="/hargar-webcomic/ajuda/ajuda.html" class="help">AJUDA</a>
+        <a href="/hargar-webcomic/mapa/mapa.html" class="bluey">MAPA</a>
+        <a href="/hargar-webcomic/pesquisar/pesquisar.html" class="bluey">PESQUISAR</a>
+        <a href="/hargar-webcomic/noticias/noticias.html" class="yellowy">NOTÍCIAS</a>
+        <a href="/hargar-webcomic/musica/musica.html" class="yellowy">MÚSICA</a>
+        <a href="/hargar-webcomic/mais/mais.html" class="orangey">MAIS</a>
+        <a href="/hargar-webcomic/configuracoes/configuracoes.html" class="orangey">CONFIGURAÇÕES</a>
+        <a href="/hargar-webcomic/creditos/creditos.html" class="orangey">CRÉDITOS</a>
+    </div>
 
     <div class="container-texto">
         <h1>Configurações</h1>
 
-        <p style="color: red; cursor: pointer;" onclick="limparProgresso()">Clique aqui para apagar o progresso salvo</p>
+        <p style="color: red; cursor: pointer;" onclick="resetarPagina()">Clique aqui para recomeçar sua leitura</p>
     </div>
 
     <script>
-  function limparProgresso() {
-    localStorage.clear();
-    alert("Seu progresso foi apagado!");
-  }
-</script>
+        function resetarPagina() {
+            localStorage.removeItem("ultimaPagina");
+            alert("Sua leitura será reiniciada! Quando voltar para a página inicial, todo seu progresso terá simplesmente PUFT!");
+        }
+    </script>
 </body>
 </html>
