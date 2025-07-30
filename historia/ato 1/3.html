@@ -146,7 +146,7 @@
         <h1 class="titulo-pagina">Tentar novamente</h1>
 
         <div class="placeholder-imagem">
-            <img src="PLACEHOLDER" alt="IMAGEM">
+            <img src="https://i.supaimg.com/45cd21ef-163f-4aad-8d03-7731f6f42d58.gif" alt="IMAGEM">
         </div>
 
         <p>
@@ -156,11 +156,17 @@
         <a href="4.html" class="proxima-pagina">
             > Charlie: Olhar ao redor da sala.
         </a>
+
+        <a href="2.html">Voltar</a>
     </div>
 
     <script>
   if (window.location.pathname.includes("/historia/")) {
-    localStorage.setItem("ultimaPagina", window.location.href);
+    const visitadas = JSON.parse(localStorage.getItem("paginasVisitadas") || "[]");
+    if (!visitadas.includes(window.location.href)) {
+      visitadas.push(window.location.href);
+      localStorage.setItem("paginasVisitadas", JSON.stringify(visitadas));
+    }
   }
 </script>
 </body>

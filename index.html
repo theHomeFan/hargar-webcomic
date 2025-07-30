@@ -58,7 +58,7 @@
       </div>
       <div class="secao-item">
         <div class="placeholder-imagem-secao">
-          <p>[IMAGEM AQUI]</p>
+          <img src="https://i.supaimg.com/a4b05aad-cab4-4975-a794-be9a880ef78d.png" alt="Iagem de Música">
         </div>
         <h3>Música</h3>
         <p>Explore a discografia das músicas usadas em Worldstuck, algumas até originais!</p>
@@ -67,14 +67,22 @@
   </div>
 
   <script>
-  const ultimaPagina = localStorage.getItem("ultimaPagina");
+  const paginasVisitadas = JSON.parse(localStorage.getItem("paginasVisitadas") || "[]");
+  const maioresPaginas = paginasVisitadas
+    .map(url => {
+      const match = url.match(/\/(\d+)\.html$/);
+      return match ? { url, numero: parseInt(match[1]) } : null;
+    })
+    .filter(Boolean)
+    .sort((a, b) => b.numero - a.numero);
+
   const botaoContainer = document.getElementById("botao-leitura");
 
-  if (ultimaPagina && botaoContainer) {
+  if (maioresPaginas.length > 0 && botaoContainer) {
+    const novaPagina = maioresPaginas[0].url;
     const novoBotao = document.createElement("div");
     novoBotao.classList.add("link-item");
-    novoBotao.innerHTML = `<a href="${ultimaPagina}"><h2><b>> Continuar a ler</b></h2></a>`;
-
+    novoBotao.innerHTML = `<a href="${novaPagina}"><h2><b>> Continuar a ler</b></h2></a>`;
     botaoContainer.replaceWith(novoBotao);
   }
 </script>

@@ -163,7 +163,11 @@
 
     <script>
   if (window.location.pathname.includes("/historia/")) {
-    localStorage.setItem("ultimaPagina", window.location.href);
+    const visitadas = JSON.parse(localStorage.getItem("paginasVisitadas") || "[]");
+    if (!visitadas.includes(window.location.href)) {
+      visitadas.push(window.location.href);
+      localStorage.setItem("paginasVisitadas", JSON.stringify(visitadas));
+    }
   }
 </script>
 </body>
